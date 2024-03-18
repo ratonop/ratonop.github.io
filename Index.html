@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Inicio</title>
+    
+     <nav class="menus">
+                   <a href="index.html">Inicio</a>
+                   <a href="1.1.html">1.1</a>
+                   <a href="ACTIVIDADES.html">ACTIVIDADES</a>
+    </nav>
+    
+  <style>
+    /* Estilos CSS para darle formato a la imagen y al texto */
+    .container {
+      text-align: center;
+      padding: 50px;
+        color: antiquewhite
+    }
+       body {
+  background-image: url('imagenes/lap.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+      
+  img {
+  width: 100px; /* Establece el ancho deseado */
+  height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción original de la imagen */  
+  float:left
+      }   
+      
+      .menus {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255,182,193);
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+
+#menus-bar {
+    display: none;
+}
+
+
+header label {
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.menus {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: PaleTurquoise;
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+
+.menus a {
+    display: block;
+    color: hsla(0, 0%, 0%, 0.822);
+    height: 50px;
+    text-decoration: none;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.menus a:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+#menus-bar:checked ~ .menus {
+    transform: translateX(0);
+}
+
+@media (min-width:1024px) {
+    .menus {
+        position:static;
+        width: 100%;
+        height: 100%;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+    }
+  } 
+    .menus a {
+        border: none;
+        background:LightCyan;
+    }
+    
+   header label {
+       display: none;
+    }
+
+    h2{
+      color: HotPink;
+    }
+
+
+  </style>
+</head>
+<body>
+    
+  <div class="container">
+
+      <img src="conalep.jpg" alt="Descripción de la imagen">
+      <h1>Bienvenido a mi Página Web</h1>
+      <br>
+      <p> NOMBRE DE DOCENTE: CARLOS DANIEL RIOS RIVERA</p>
+      <br>
+       <p> NOMBRE DE TODOS LOS INTEGRANTES:</p>
+      <br>
+       <P>POMOL PECH ANA BEATRIZ</P>
+      <P>MAHONRY MUZABINY EUAN CIAU</P>
+      <P>POOT GUTIERREZ JIMMER ALEXIS</P>
+      <P>MIGUEL ANGEL MAY AY</P>
+      <P>NICOLAS HAU CANCHE</P>
+  
+    <h2>1.1 Identifica el marco jurídico del derecho informático relativo al manejo de la información y a la función del usuario, conforme a las leyes, normas y principios mexicanos.</h2>
+    <p>¡NOMBRE DEL MODULO: APLICACIÓN DE LA NORMATIVIDAD INFORMÁTICA!</p>
+      
+  </div>
+</body>
+</html>
+
